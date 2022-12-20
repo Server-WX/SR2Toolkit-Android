@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_craft_resistance,
                 R.id.nav_craft_appearance,
                 R.id.nav_craft_other,
+                R.id.nav_craft_god,
                 R.id.nav_about
         )
                 .setOpenableLayout(drawer)
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         //获取当前系统语言
         String locale_language = Locale.getDefault().getLanguage();
 
-        if (locale_language.equals("zh")){
+        if (locale_language.equals("zh")) {
             config.locale = Locale.CHINA;
             resources.updateConfiguration(config, dm);
         }
@@ -165,7 +166,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d("pkgPath", "软件包路径：" + filePath + ".xml");
         Log.d("pkgPath", String.valueOf(editXmlUtil.getFileStatus()));
     }
-
 
     /*
         存档缩放与质量修改接收文本框参数检测后传入
@@ -250,7 +250,6 @@ public class MainActivity extends AppCompatActivity {
             // 获取下拉列表选中的ID值
             int collisionsItemValue = (int) collisionsList.getSelectedItemId();
             int collisionsResponseItemValue = (int) collisionsResponseList.getSelectedItemId();
-
 
             // 碰撞箱模式逻辑
             switch (collisionsItemValue) {
@@ -432,6 +431,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /*
+     * 上帝模式代码
+     * */
+    public void godModeApply(View view) {
+        if (editXmlUtil.getFileStatus() != null) {
+            Button outputButton = findViewById(R.id.output_button);
+            // 一键无敌大礼包
+            editXmlUtil.editAttribute("maxDamage", "3.4e+38");
+            editXmlUtil.editAttribute("collisionDisconnectImpulse", "3.4e+38");
+            editXmlUtil.editAttribute("collisionDisconnectVelocity", "3.4e+38");
+            editXmlUtil.editAttribute("collisionExplodeImpulse", "3.4e+38");
+            editXmlUtil.editAttribute("collisionExplodeVelocity", "3.4e+38");
+            editXmlUtil.editAttribute("collisionPreventExternalDisconnections", "true");
+
+            outputButton.setVisibility(View.VISIBLE);
+        } else {
+            alertNotFileWarning();
+        }
+    }
+
 
     //使用说明按钮
     public void loadCraftExplain(View view) {
@@ -601,6 +620,39 @@ public class MainActivity extends AppCompatActivity {
                         " "
                         + "\r\n" +
                         getResources().getString(R.string.other_6)
+                ).create();
+        dialog.show();
+    }
+
+    public void godModeExplain(View view) {
+        // 存档其他说明
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle(getResources().getString(R.string.god_mode))
+                .setMessage(getResources().getString(R.string.god_mode_1)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_2)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_3)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_4)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_5)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_6)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.god_mode_7)
                 ).create();
         dialog.show();
     }

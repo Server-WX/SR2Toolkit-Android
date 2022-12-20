@@ -114,6 +114,16 @@
     <string name="other_5">The Inertia Tensor User Scale corresponds to the inertiaTensorUserScale attribute of the Config node in the part and the existing Stability Modifier slider</string>
     <string name="other_6">The All-around Fuel Lines corresponds to the Fuel Line switch in Advanced Part Settings</string>
     <string name="other_7">If you need to keep the original value, please leave it blank and do not enter anything</string>
+    <!--上帝模式的文本内容-->
+    <string name="god_mode">God Mode</string>
+    <string name="the_god_mode">\u3000\u3000如你所见，这是一个上帝模式，它能够赋予你，全新的力量。让你的Craft坚不可摧，你只需要点击下面的按钮即可称为上帝\u3000:)</string>
+    <string name="god_mode_1">上帝模式功能修改了以下属性</string>
+    <string name="god_mode_2">- maxDamage -> 零件的血量</string>
+    <string name="god_mode_3">- collisionDisconnectImpulse -> 碰撞时冲量超过该值连接点将会断开</string>
+    <string name="god_mode_4">- collisionDisconnectVelocity -> 发生碰撞时速度超过该值连接点将会断开</string>
+    <string name="god_mode_5">- collisionExplodeImpulse -> 发生碰撞时冲量超过该值零件将会爆炸</string>
+    <string name="god_mode_6">- collisionExplodeVelocity -> 发射碰撞时速度超过该值零件将会爆炸</string>
+    <string name="god_mode_7">- collisionPreventExternalDisconnections -> 无论如何碰撞连接点都不会断开</string>
 
     <!--关于-->
     <string name="statement">Declaration</string>

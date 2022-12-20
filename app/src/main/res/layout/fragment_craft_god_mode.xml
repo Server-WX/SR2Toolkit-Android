@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CraftGodMode">
+
+    <TextView
+        android:layout_above="@+id/god_introduction"
+        android:text="@string/god_mode"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        style="@style/text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/god_introduction"
+        android:text="@string/the_god_mode"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        style="@style/text_style"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/apply_button"
+        style="@style/apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/god_introduction"
+        android:onClick="godModeApply"
+        android:text="@string/Apply" />
+
+    <Button
+        android:id="@+id/explain_button"
+        style="@style/explain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apply_button"
+        android:onClick="godModeExplain" />
+
+</RelativeLayout>

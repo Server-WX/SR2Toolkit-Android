@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_nav_home_to_nav_craft_about"
             app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_god"
+            app:destination="@id/nav_craft_god" />
     </fragment>
 
     <fragment
@@ -68,6 +71,12 @@
         android:name="com.infinity.sr2.toolkit.ui.CraftOther"
         android:label="@string/craft_other"
         tools:layout="@layout/fragment_craft_other"/>
+
+    <fragment
+        android:id="@+id/nav_craft_god"
+        android:name="com.infinity.sr2.toolkit.ui.CraftGodMode"
+        android:label="@string/god_mode"
+        tools:layout="@layout/fragment_craft_god_mode"/>
 
     <fragment
         android:id="@+id/nav_about"

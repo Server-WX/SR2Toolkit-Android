@@ -114,6 +114,16 @@
     <string name="other_5">惯性张量对应零件中Config节点的inertiaTensorUserScale属性和曾经存在的Stability Modifier滑条</string>
     <string name="other_6">零件燃料管道对应Advanced Part Settings中的Fuel Line开关</string>
     <string name="other_7">如果需要保留原来的数值请留空，不要输入任何内容</string>
+    <!--上帝模式的文本内容-->
+    <string name="god_mode">上帝模式</string>
+    <string name="the_god_mode">\u3000\u3000如你所见，这是一个上帝模式，它能够赋予你，全新的力量。让你的Craft坚不可摧，你只需要点击下面的按钮即可称为上帝\u3000:)</string>
+    <string name="god_mode_1">上帝模式功能修改了以下属性</string>
+    <string name="god_mode_2">1. maxDamage -> 零件的血量</string>
+    <string name="god_mode_3">2. collisionDisconnectImpulse -> 碰撞时冲量超过该值连接点将会断开</string>
+    <string name="god_mode_4">3. collisionDisconnectVelocity -> 发生碰撞时速度超过该值连接点将会断开</string>
+    <string name="god_mode_5">4. collisionExplodeImpulse -> 发生碰撞时冲量超过该值零件将会爆炸</string>
+    <string name="god_mode_6">4. collisionExplodeVelocity -> 发射碰撞时速度超过该值零件将会爆炸</string>
+    <string name="god_mode_7">4. collisionPreventExternalDisconnections -> 无论如何碰撞连接点都不会断开</string>
 
     <!--关于-->
     <string name="statement">声明</string>

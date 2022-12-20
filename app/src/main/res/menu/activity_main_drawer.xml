@@ -32,6 +32,12 @@
             android:id="@+id/nav_craft_other"
             android:icon="@drawable/ic_menu_other"
             android:title="@string/craft_other"/>
+
+        <item
+            android:id="@+id/nav_craft_god"
+            android:icon="@drawable/ic_menu_god"
+            android:title="@string/god_mode"/>
+
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_menu_about"
