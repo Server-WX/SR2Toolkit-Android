@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/color_block_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inertia_tensor_plant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/color_block"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/color_block_label" />
+
+        <EditText
+            android:id="@+id/color_block_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/color_block"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inertia_tensor_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fuel_line_plant"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/inertia_tensor"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inertia_tensor_label" />
+
+        <EditText
+            android:id="@+id/inertia_tensor_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/inertia_tensor"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fuel_line_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/fuel_line"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_line_label" />
+
+        <Switch
+            android:id="@+id/fuel_line_switch"
+            style="@style/switch_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/fuel_line"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/other_apply"
+        style="@style/apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fuel_line_plant"
+        android:onClick="otherApply" />
+
+    <Button
+        android:id="@+id/explain_button"
+        style="@style/explain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/other_apply"
+        android:onClick="otherExplain" />
+
+</RelativeLayout>

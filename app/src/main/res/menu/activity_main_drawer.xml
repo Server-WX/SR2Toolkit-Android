@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_loading"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_craft_resize"
+            android:icon="@drawable/ic_menu_craft_resize"
+            android:title="@string/craft_resize" />
+        <item
+            android:id="@+id/nav_craft_collisions"
+            android:icon="@drawable/ic_menu_collisions"
+            android:title="@string/craft_collisions"/>
+        <item
+            android:id="@+id/nav_craft_Drag"
+            android:icon="@drawable/ic_menu_drag"
+            android:title="@string/craft_drag"/>
+        <item
+            android:id="@+id/nav_craft_resistance"
+            android:icon="@drawable/ic_menu_resistance"
+            android:title="@string/craft_resistance"/>
+        <item
+            android:id="@+id/nav_craft_appearance"
+            android:icon="@drawable/ic_menu_appearance"
+            android:title="@string/craft_appearance"/>
+        <item
+            android:id="@+id/nav_craft_other"
+            android:icon="@drawable/ic_menu_other"
+            android:title="@string/craft_other"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/action_about"/>
+    </group>
+</menu>

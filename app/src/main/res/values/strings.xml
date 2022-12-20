@@ -1,0 +1,186 @@
+<resources>
+    <!--Info-->
+    <string name="app_name">SR2 Toolkit</string>
+    <string name="nav_header_title">JasonCaesar007</string>
+    <string name="nav_header_subtitle">InfinityIndustry Studio</string>
+    <string name="app_version">Version：0.5.5</string>
+
+    <string name="navigation_drawer_open">Menu</string>
+    <string name="navigation_drawer_close">Exit</string>
+    <string name="nav_header_desc">Navigator</string>
+    <string name="action_about">About</string>
+    <!--GUI文本-->
+    <!--载入存档-->
+    <string name="menu_home">Load Craft</string>
+    <string name="craft_name_label">Craft Name：</string>
+    <string name="Apply">Apply</string>
+
+    <!--统一UI-->
+    <string name="apply_button">Apply</string>
+    <string name="explain">Introduction</string>
+    <string name="Output">Output</string>
+
+    <!--缩放-->
+    <string name="craft_resize">Craft Resize</string>
+    <string name="craft_resize_label">Scaling：</string>
+    <string name="to_scale">Only For Diameter</string>
+    <string name="scale_label">Craft Scale</string>
+    <string name="mass_scale">Mass Scale：</string>
+    <!--碰撞-->
+    <string name="craft_collisions">Craft Collisions</string>
+    <string name="collisions_model_label">Collision Mode：</string>
+    <string name="collisions_response_label">Collision Response：</string>
+    <!--阻力-->
+    <string name="craft_drag">Craft Drag</string>
+    <string name="craft_drag_label">Drag Scale：</string>
+    <string name="text_drag_model">Drag Model:</string>
+    <!--抗性-->
+    <string name="craft_resistance">Craft Resistance</string>
+    <string name="craft_damage">Part Health：</string>
+    <string name="craft_heat_resist">Part Temperature：</string>
+    <!--外观-->
+    <string name="craft_appearance">Craft Appearance</string>
+    <string name="part_bit_reserve_label">Part Debris：</string>
+    <string name="part_transparent_label">Support Transparency：</string>
+    <string name="part_shadow_label">Parts Cast Shadows：</string>
+    <string name="fuel_tanks_texture_label">Fuel Tanks\' Texture：</string>
+    <!--其他-->
+    <string name="craft_other">Others</string>
+    <string name="color_block_label">Add Color Checks：</string>
+    <string name="inertia_tensor_label">Inertial Tensor User Scale：</string>
+    <string name="fuel_line_label">All-around Fuel Lines：</string>
+    <!--弹出消息-->
+    <string name="rw_permissions_true">Access Succeeded</string>
+    <string name="rw_permissions_false">Please authorize the application to use internal storage</string>
+    <string name="file_exists_true">Loading succeeded. Click the menu bar to start using!</string>
+    <string name="file_exists_false">Craft does not exist! Please check if the file name is wrong!</string>
+    <string name="result_time">Time Used:</string>
+    <string name="second">Second</string>
+    <string name="loading_file">Loading Craft</string>
+    <string name="output_file">OutputIng</string>
+
+    <!--警告弹窗内容-->
+    <string name="warning">Warning</string>
+    <string name="error1">Please import the file first!</string>
+    <string name="error2">Do not enter SPACE!</string>
+    <string name="error3">You need to modify at least one of them!</string>
+
+    <!--使用说明的文本内容-->
+    <string name="load_craft_file_1">Instructions for Importing Files</string>
+    <string name="load_craft_file_2">1.Copy the craft file to: /sdcard/Android/data/com.infinity.sr2.toolkit/files/</string>
+    <string name="load_craft_file_3">2.Fill in the name of your craft in the input box without . xml suffix</string>
+    <string name="load_craft_file_4">If an error is reported,that means the file name is filled incorrectly</string>
+    <!--存档缩放的文本内容-->
+    <string name="craft_resize_1">Instructions for Craft Global Scaling</string>
+    <string name="craft_resize_2">The first input box is for scale, which is used to enlarge or reduce the craft as a whole</string>
+    <string name="craft_resize_3">To enlarge the craft to 200%, enter 2. Reduce the craft to 20%, enter 0.2, and so on</string>
+    <string name="craft_resize_4">Only positive numbers can be entered in the input box, NO negative numbers!</string>
+    <string name="craft_resize_5">If only the diameter is modified, it means to modify the width and depth of the fuel tank</string>
+    <string name="craft_resize_6">When Craft Scale is checked, the processing of the fuel tank is changed to modify the part scale size in the Tinker Panel</string>
+    <string name="craft_resize_7">The second input box is used to scale the mass size of all parts, for example:</string>
+    <string name="craft_resize_8">When entering 2, the massScale will be changed to 200%, when entering 0.2, it will be changed to 20%, and so on</string>
+    <string name="craft_resize_9">If you need to keep the original settings, please leave blank and do not enter anything</string>
+    <string name="craft_resize_10">If you need to restore the default quality, please enter "default" in the Mass Scale input box (pay attention to case)</string>
+    <!--存档碰撞的文本内容-->
+    <string name="collisions_1">Craft collision instructions</string>
+    <string name="collisions_2">Click the button next to the text to pop up a drop-down list and select the attribute you want to be modified</string>
+    <string name="collisions_3">The Part Collision mode corresponds to the part collision in the Tinker Panel</string>
+    <string name="collisions_4">The Collision Response mode of the collision box corresponds to the Collision Response in the Tinker Panel</string>
+    <string name="collisions_5">"DisOnly" in Collision Response mode corresponds to the DisconnectOnly option</string>
+    <string name="collisions_6">When you need to keep the original property settings unchanged, please select the "Do not change" option before confirming</string>
+    <!--存档阻力的文本内容-->
+    <string name="drag_1">Instructions for Craft Drag</string>
+    <string name="drag_2">Craft Drag corresponds to Drag Scale value in Tinker Panel</string>
+    <string name="drag_3">Craft Drag Model Include In Drag</string>
+    <string name="drag_4">If you want to back to the default value of Drag Scale, enter "default"</string>
+    <!--存档抗性的文本内容-->
+    <string name="resistance_1">Instructions for the use of Craft Resistance</string>
+    <string name="resistance_2">The Part Health corresponds to the maxDamage attribute in the Config node, which refers to the maximum part blood volume</string>
+    <string name="resistance_3">For example, if the default maxDamage of the rocket engine is not modified after the damage setting is added to the new version</string>
+    <string name="resistance_4">Engines will explode when reaches 100% damage during it works</string>
+    <string name="resistance_5">The Heat Resistance of the part corresponds to the value of the Heat Shield slider in the Advanced Part Setting</string>
+    <string name="resistance_6">If you need to keep the setting of the original, Do not fill in any content in the input box. If you want to back to the default, enter "default" (pay attention to case)</string>
+    <!--存档外观的文本内容-->
+    <string name="appearance_1">Craft Appearance Instructions</string>
+    <string name="appearance_2">Part Debris corresponding to the Prevent Debris switch in the Tinker Panel</string>
+    <string name="appearance_3">Support Transparency of parts corresponds to the Supports Transparency switch in the Tinker Panel</string>
+    <string name="appearance_4">Parts Cast Shadows corresponds to the Cast Shadows switch in the Tinker Panel</string>
+    <string name="appearance_5">Fuel Tanks\' Texture switch is turned off, only the texture of all oil tanks will be set to None, and other parts will not be modified. Keep it open if necessary</string>
+    <!--存档其他设置的文本内容-->
+    <string name="other_1">Instructions for Others attributes</string>
+    <string name="other_2">The number of color checks in the Paint Tool tool corresponding to the color grid added</string>
+    <string name="other_3">The maximum number of grids supported by the current version , 0.9.906 , is 50</string>
+    <string name="other_4">That means there are only 25 checks can be added, and the surplus will not take effect</string>
+    <string name="other_5">The Inertia Tensor User Scale corresponds to the inertiaTensorUserScale attribute of the Config node in the part and the existing Stability Modifier slider</string>
+    <string name="other_6">The All-around Fuel Lines corresponds to the Fuel Line switch in Advanced Part Settings</string>
+    <string name="other_7">If you need to keep the original value, please leave it blank and do not enter anything</string>
+
+    <!--关于-->
+    <string name="statement">Declaration</string>
+    <string name="statement_1">This program promises to be free but without be tampered for resale!</string>
+    <string name="statement_2">We are not responsible if you obtain this program by paying</string>
+    <string name="statement_3">Reproduction in any form is strictly prohibited without the permission of the author!</string>
+    <string name="contact_us">Contact us</string>
+    <string name="qq_code">QQ Group：</string>
+    <string name="qq_code_1">784842122</string>
+    <string name="tg">Telegram：</string>
+    <string name="tg_code">SimpleRockets2 Toolkit</string>
+    <string name="sr2_website">SR2 Website：</string>
+    <string name="sr2_website_link">JasonCaesar007</string>
+    <string name="source_license">Open Source License</string>
+    <string name="dom4j">Dom4j</string>
+    <string name="dom4j_source_license_1">Copyright 2001–2016 © MetaStuff</string>
+    <string name="dom4j_source_license_2">Ltd. and DOM4J contributors.</string>
+    <string name="copyright_text">Copyright ©2022 InfinityIndustryStudio</string>
+
+    <!--下拉列表-->
+    <string-array name="craft_collisions_list">
+        <item>Default</item>
+        <item>Always</item>
+        <item>Never</item>
+        <item>No Modifications</item>
+    </string-array>
+
+    <string-array name="collisions_list">
+        <item>Default</item>
+        <item>None</item>
+        <item>Dis_only</item>
+        <item>No Modifications</item>
+    </string-array>
+
+    <!--Dom4j开源许可声明-->
+    <string name="dom4j_title">Dom4j License</string>
+    <string name="dom4j_license_1">Copyright 2001–2016 © MetaStuff, Ltd. and DOM4J contributors. All Rights Reserved.</string>
+    <string name="dom4j_license_2">Redistribution and use of this software and associated documentation
+("Software"), with or without modification, are permitted provided
+that the following conditions are met:</string>
+    <string name="dom4j_license_3">1. Redistributions of source code must retain copyright
+   statements and notices.  Redistributions must also contain a
+   copy of this document.</string>
+    <string name="dom4j_license_4">2. Redistributions in binary form must reproduce the
+   above copyright notice, this list of conditions and the
+   following disclaimer in the documentation and/or other
+   materials provided with the distribution.</string>
+    <string name="dom4j_license_5">3. The name "DOM4J" must not be used to endorse or promote
+   products derived from this Software without prior written
+   permission of MetaStuff, Ltd.  For written permission,
+   please contact dom4j-info@metastuff.com.</string>
+    <string name="dom4j_license_6">4. Products derived from this Software may not be called "DOM4J"
+   nor may "DOM4J" appear in their names without prior written
+   permission of MetaStuff, Ltd. DOM4J is a registered
+   trademark of MetaStuff, Ltd.</string>
+    <string name="dom4j_license_7">5. Due credit should be given to the DOM4J Project - https://dom4j.github.io/</string>
+    <string name="dom4j_license_8">THIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS
+``AS IS\'\' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+
+</resources>

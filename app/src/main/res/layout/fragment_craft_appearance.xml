@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <RelativeLayout
+        android:id="@+id/part_bit_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/part_transparent_plant"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/part_bit_reserve_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_bit_reserve_label" />
+
+        <Switch
+            android:id="@+id/part_bit_reserve_switch"
+            style="@style/switch_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/part_bit_reserve_label" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/part_transparent_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/part_shadow_plant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/part_transparent_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_transparent_label" />
+
+        <Switch
+            android:id="@+id/part_transparent_switch"
+            style="@style/switch_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/part_transparent_label"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/part_shadow_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fuel_tanks_texture_remove"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/part_shadow_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/part_shadow_label" />
+
+        <Switch
+            android:id="@+id/part_shadow_switch"
+            style="@style/switch_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/part_shadow_label"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fuel_tanks_texture_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/fuel_tanks_texture_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_tanks_texture_label" />
+
+        <Switch
+            android:id="@+id/fuel_tanks_texture_model"
+            style="@style/switch_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/fuel_tanks_texture_label"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/appearance_apply"
+        style="@style/apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fuel_tanks_texture_remove"
+        android:onClick="appearanceApply" />
+
+    <Button
+        android:id="@+id/explain_button"
+        style="@style/explain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appearance_apply"
+        android:onClick="appearanceExplain" />
+
+</RelativeLayout>

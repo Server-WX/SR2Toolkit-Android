@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.infinity.sr2.toolkit.ui.LoadCraft"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_load_craft">
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_resize"
+            app:destination="@id/nav_craft_resize" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_collisions"
+            app:destination="@id/nav_craft_collisions" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_Drag"
+            app:destination="@id/nav_craft_Drag" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_resistance"
+            app:destination="@id/nav_craft_resistance" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_appearance"
+            app:destination="@id/nav_craft_appearance" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_other"
+            app:destination="@id/nav_craft_other" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_craft_about"
+            app:destination="@id/nav_about" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_craft_resize"
+        android:name="com.infinity.sr2.toolkit.ui.CraftResize"
+        android:label="@string/craft_resize"
+        tools:layout="@layout/fragment_craft_resize" />
+
+    <fragment
+        android:id="@+id/nav_craft_collisions"
+        android:name="com.infinity.sr2.toolkit.ui.CraftCollisions"
+        android:label="@string/craft_collisions"
+        tools:layout="@layout/fragment_craft_collisions" />
+
+    <fragment
+        android:id="@+id/nav_craft_Drag"
+        android:name="com.infinity.sr2.toolkit.ui.CraftDrag"
+        android:label="@string/craft_drag"
+        tools:layout="@layout/fragment_craft_drag" />
+
+    <fragment
+        android:id="@+id/nav_craft_resistance"
+        android:name="com.infinity.sr2.toolkit.ui.CraftResistance"
+        android:label="@string/craft_resistance"
+        tools:layout="@layout/fragment_craft_resistance" />
+
+    <fragment
+        android:id="@+id/nav_craft_appearance"
+        android:name="com.infinity.sr2.toolkit.ui.CraftAppearance"
+        android:label="@string/craft_appearance"
+        tools:layout="@layout/fragment_craft_appearance"/>
+
+    <fragment
+        android:id="@+id/nav_craft_other"
+        android:name="com.infinity.sr2.toolkit.ui.CraftOther"
+        android:label="@string/craft_other"
+        tools:layout="@layout/fragment_craft_other"/>
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.infinity.sr2.toolkit.ui.About"
+        android:label="@string/action_about"
+        tools:layout="@layout/fragment_about"/>
+</navigation>

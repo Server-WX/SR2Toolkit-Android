@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/damage_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/heat_resist_plant"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/damage_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/craft_damage" />
+
+        <EditText
+            android:id="@+id/damage_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/damage_label"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/heat_resist_plant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/heat_resist_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/craft_heat_resist" />
+
+        <EditText
+            android:id="@+id/heat_resist_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/heat_resist_label"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/resistance_apply"
+        style="@style/apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heat_resist_plant"
+        android:onClick="resistanceApply" />
+
+    <Button
+        android:id="@+id/explain_button"
+        style="@style/explain_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resistance_apply"
+        android:onClick="resistanceExplain" />
+
+</RelativeLayout>

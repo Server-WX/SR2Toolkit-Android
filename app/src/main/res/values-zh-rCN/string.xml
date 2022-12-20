@@ -1,0 +1,186 @@
+<resources>
+    <!--APP信息-->
+    <string name="app_name">SR2 Toolkit</string>
+    <string name="nav_header_title">JasonCaesar007</string>
+    <string name="nav_header_subtitle">InfinityIndustry Studio</string>
+    <string name="app_version">Version：0.5.5</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
+    <string name="nav_header_desc">导航头</string>
+    <string name="action_about">关于</string>
+    <!--GUI文本-->
+    <!--载入存档-->
+    <string name="menu_home">载入Craft</string>
+    <string name="craft_name_label">存档名称：</string>
+    <string name="Apply">确认</string>
+
+    <!--统一UI-->
+    <string name="apply_button">应用</string>
+    <string name="explain">说明</string>
+    <string name="Output">导出</string>
+
+    <!--缩放-->
+    <string name="craft_resize">存档整体缩放</string>
+    <string name="craft_resize_label">缩放比例：</string>
+    <string name="to_scale">仅修改直径</string>
+    <string name="scale_label">仅修改三维</string>
+    <string name="mass_scale">质量大小：</string>
+    <!--碰撞-->
+    <string name="craft_collisions">存档碰撞属性</string>
+    <string name="collisions_model_label">碰撞箱模式：</string>
+    <string name="collisions_response_label">碰撞箱反应模式：</string>
+    <!--阻力-->
+    <string name="craft_drag">存档阻力属性</string>
+    <string name="craft_drag_label">阻力倍数：</string>
+    <string name="text_drag_model">阻力模型:</string>
+    <!--抗性-->
+    <string name="craft_resistance">存档抗性设置</string>
+    <string name="craft_damage">零件血量：</string>
+    <string name="craft_heat_resist">零件抗热：</string>
+    <!--外观-->
+    <string name="craft_appearance">存档外观设置</string>
+    <string name="part_bit_reserve_label">零件碎片化保留：</string>
+    <string name="part_transparent_label">零件支持透明化：</string>
+    <string name="part_shadow_label">零件产生阴影：</string>
+    <string name="fuel_tanks_texture_label">油箱纹理：</string>
+    <!--其他-->
+    <string name="craft_other">存档其他设置</string>
+    <string name="color_block_label">添加颜色格子：</string>
+    <string name="inertia_tensor_label">惯性张量：</string>
+    <string name="fuel_line_label">零件燃料管道：</string>
+    <!--弹出消息-->
+    <string name="rw_permissions_true">权限获取成功</string>
+    <string name="rw_permissions_false">请授权应用使用内部存储</string>
+    <string name="file_exists_true">加载成功，点击菜单栏开始使用吧！</string>
+    <string name="file_exists_false">文件不存在！请检查文件名是否错误！</string>
+    <string name="result_time">导出所用时间：</string>
+    <string name="second">秒</string>
+    <string name="loading_file">正在加载Craft文件</string>
+    <string name="output_file">正在导出Craft文件</string>
+
+    <!--警告弹窗内容-->
+    <string name="warning">警告</string>
+    <string name="error1">请先导入文件！</string>
+    <string name="error2">请勿输入空格！</string>
+    <string name="error3">你至少需要修改其中一项！</string>
+
+    <!--使用说明的文本内容-->
+    <string name="load_craft_file_1">导入文件使用说明</string>
+    <string name="load_craft_file_2">1.先将存档文件复制到：内部存储/Android/data/com.infinity.sr2.toolkit/files/ 后操作</string>
+    <string name="load_craft_file_3">2.在输入框内填入你存档的名称，不要加.xml后缀</string>
+    <string name="load_craft_file_4">如果报错则说明文件名填写有误</string>
+    <!--存档缩放的文本内容-->
+    <string name="craft_resize_1">存档整体缩放使用说明</string>
+    <string name="craft_resize_2">第一个输入框是体积缩放,用于整体放大和缩小存档</string>
+    <string name="craft_resize_3">将存档放大至200%，输入2。 将存档缩小至20%，输入0.2，以此类推</string>
+    <string name="craft_resize_4">输入框内只能输入正数不能输入负数！</string>
+    <string name="craft_resize_5">勾选仅修改直径时将指修改油箱的Width和Depth等尺寸</string>
+    <string name="craft_resize_6">勾选仅修改三维时，对油箱的处理转为只修改Tinker Panel中的Part Scale大小</string>
+    <string name="craft_resize_7">第二个输入框用于缩放存档所有部件的质量大小，举例：</string>
+    <string name="craft_resize_8">当输入2时，会将massScale改为200%，输入0.2时会改成20%，以此类推</string>
+    <string name="craft_resize_9">如果需要保留原来的设定请留空，不要输入任何内容</string>
+    <string name="craft_resize_10">如果需还原默认质量，请在质量输入框内输入“default”(留意大小写)</string>
+    <!--存档碰撞的文本内容-->
+    <string name="collisions_1">存档碰撞使用说明</string>
+    <string name="collisions_2">单击文本旁边的按钮可弹出下拉列表，选择需要修改的属性</string>
+    <string name="collisions_3">碰撞箱模式对应Tinker Panel中的Part Collision</string>
+    <string name="collisions_4">碰撞箱反应模式对应Tinker Panel中的Collision Response</string>
+    <string name="collisions_5">碰撞反应模式中的“DisOnly”对应的是DisconnectOnly选项</string>
+    <string name="collisions_6">当你需要保留原来的属性设置不修改时，请选择”不更改“选项后再确认</string>
+    <!--存档阻力的文本内容-->
+    <string name="drag_1">存档阻力使用说明</string>
+    <string name="drag_2">阻力倍数对应Tinker Panel中的Drag Scale的值</string>
+    <string name="drag_3">阻力模型对应Include In Drag的开关</string>
+    <string name="drag_4">如需还原Drag Scale的默认值请输入”default“</string>
+    <!--存档抗性的文本内容-->
+    <string name="resistance_1">存档抗性使用说明</string>
+    <string name="resistance_2">零件血量对应Config节点中的maxDamage属性，指代零件的最大血量</string>
+    <string name="resistance_3">例如新版发动机加入耐久设定后如不修改发动机默认的maxDamage</string>
+    <string name="resistance_4">在发动机启动后maxDamage到达临界值将发生爆炸</string>
+    <string name="resistance_5">零件抗热对应Advanced Part Setting中的Heat Shield滑条的值</string>
+    <string name="resistance_6">如需要保持原文件的设定值请留空，不要在输入框内填写任何内容，还原默认则输入"default"(注意大小写)</string>
+    <!--存档外观的文本内容-->
+    <string name="appearance_1">存档外观使用说明</string>
+    <string name="appearance_2">碎片化零件保留对应Tinker Panel中的Prevent Debris开关</string>
+    <string name="appearance_3">零件支持透明化对应Tinker Panel中的Supports Transparency开关</string>
+    <string name="appearance_4">零件产生阴影对应Tinker Panel中的Cast Shadows开关</string>
+    <string name="appearance_5">油箱纹理清除开关关闭时只会把所有油箱的Texture设为None，不修改其他零件。如需保持原样请保持开启状态</string>
+    <!--存档其他设置的文本内容-->
+    <string name="other_1">存档其他属性使用说明</string>
+    <string name="other_2">添加颜色格子对应Paint Tool工具中颜色格子的数量</string>
+    <string name="other_3">当前v0.9.906版本所支持的最大上限数量是50个格子</string>
+    <string name="other_4">默认情况下只有25个，也就是只能增加25个，多余的将不会生效</string>
+    <string name="other_5">惯性张量对应零件中Config节点的inertiaTensorUserScale属性和曾经存在的Stability Modifier滑条</string>
+    <string name="other_6">零件燃料管道对应Advanced Part Settings中的Fuel Line开关</string>
+    <string name="other_7">如果需要保留原来的数值请留空，不要输入任何内容</string>
+
+    <!--关于-->
+    <string name="statement">声明</string>
+    <string name="statement_1">本程序承诺永久免费，不得篡改进行转卖!</string>
+    <string name="statement_2">如果您以付费的方式获得此程序我们概不负责</string>
+    <string name="statement_3">未经作者允许严禁任何形式转载！</string>
+    <string name="contact_us">联系我们</string>
+    <string name="qq_code">QQ群：</string>
+    <string name="qq_code_1">784842122</string>
+    <string name="tg">TG群组：</string>
+    <string name="tg_code">SimpleRockets2 Toolkit</string>
+    <string name="sr2_website">SR2 官网：</string>
+    <string name="sr2_website_link">JasonCaesar007</string>
+    <string name="source_license">开源许可</string>
+    <string name="dom4j">Dom4j</string>
+    <string name="dom4j_source_license_1">Copyright 2001–2016 © MetaStuff</string>
+    <string name="dom4j_source_license_2">Ltd. and DOM4J contributors.</string>
+    <string name="copyright_text">Copyright ©2022 InfinityIndustryStudio</string>
+
+    <!--下拉列表-->
+    <string-array name="craft_collisions_list">
+        <item>Default</item>
+        <item>Always</item>
+        <item>Never</item>
+        <item>不修改</item>
+    </string-array>
+
+    <string-array name="collisions_list">
+        <item>Default</item>
+        <item>None</item>
+        <item>Dis_only</item>
+        <item>不修改</item>
+    </string-array>
+
+    <!--Dom4j开源许可声明-->
+    <string name="dom4j_title">Dom4j License</string>
+    <string name="dom4j_license_1">Copyright 2001–2016 © MetaStuff, Ltd. and DOM4J contributors. All Rights Reserved.</string>
+    <string name="dom4j_license_2">Redistribution and use of this software and associated documentation
+("Software"), with or without modification, are permitted provided
+that the following conditions are met:</string>
+    <string name="dom4j_license_3">1. Redistributions of source code must retain copyright
+   statements and notices.  Redistributions must also contain a
+   copy of this document.</string>
+    <string name="dom4j_license_4">2. Redistributions in binary form must reproduce the
+   above copyright notice, this list of conditions and the
+   following disclaimer in the documentation and/or other
+   materials provided with the distribution.</string>
+    <string name="dom4j_license_5">3. The name "DOM4J" must not be used to endorse or promote
+   products derived from this Software without prior written
+   permission of MetaStuff, Ltd.  For written permission,
+   please contact dom4j-info@metastuff.com.</string>
+    <string name="dom4j_license_6">4. Products derived from this Software may not be called "DOM4J"
+   nor may "DOM4J" appear in their names without prior written
+   permission of MetaStuff, Ltd. DOM4J is a registered
+   trademark of MetaStuff, Ltd.</string>
+    <string name="dom4j_license_7">5. Due credit should be given to the DOM4J Project - https://dom4j.github.io/</string>
+    <string name="dom4j_license_8">THIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS
+``AS IS\'\' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+
+</resources>
