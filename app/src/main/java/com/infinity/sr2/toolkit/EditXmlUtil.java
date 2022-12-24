@@ -23,6 +23,8 @@ public class EditXmlUtil {
 
     private Double resizeNumber;
 
+    private Document oldRead;
+
     public void inputFile(String fileName) {
 
         this.fileName = fileName;
@@ -30,9 +32,20 @@ public class EditXmlUtil {
         SAXReader saxReader = new SAXReader();
 
         try {
-            read = saxReader.read(new File(fileName + ".xml") );
+            read = saxReader.read(new File(fileName + ".xml"));
+            this.oldRead = saxReader.read(new File(fileName + ".xml"));
+            System.out.println("旧的数据：" + this.oldRead);
         } catch (DocumentException e) {
             Log.d("pkgPath", "Dom解析失败");
+        }
+    }
+
+    public boolean setReplaceCraft() {
+        if (read != null && oldRead != null) {
+            read = this.oldRead;
+            return true;
+        } else {
+            return false;
         }
     }
 

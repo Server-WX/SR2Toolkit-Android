@@ -9,6 +9,8 @@
     <string name="navigation_drawer_close">Exit</string>
     <string name="nav_header_desc">Navigator</string>
     <string name="action_about">About</string>
+    <string name="clear_craft">Clear Craft</string>
+
     <!--GUI文本-->
     <!--载入存档-->
     <string name="menu_home">Load Craft</string>
@@ -58,6 +60,7 @@
     <string name="second">Second</string>
     <string name="loading_file">Loading Craft</string>
     <string name="output_file">OutputIng</string>
+    <string name="clear_text">已清除所有修改</string>
 
     <!--警告弹窗内容-->
     <string name="warning">Warning</string>
@@ -70,6 +73,8 @@
     <string name="load_craft_file_2">1.Copy the craft file to: /sdcard/Android/data/com.infinity.sr2.toolkit/files/</string>
     <string name="load_craft_file_3">2.Fill in the name of your craft in the input box without . xml suffix</string>
     <string name="load_craft_file_4">If an error is reported,that means the file name is filled incorrectly</string>
+    <string name="load_craft_file_5">当修改的内容较多时，可统一修改后再点击导出</string>
+    <string name="load_craft_file_6">点击右上角的清除按钮可以清除所有的修改</string>
     <!--存档缩放的文本内容-->
     <string name="craft_resize_1">Instructions for Craft Global Scaling</string>
     <string name="craft_resize_2">The first input box is for scale, which is used to enlarge or reduce the craft as a whole</string>

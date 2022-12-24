@@ -9,6 +9,8 @@
     <string name="navigation_drawer_close">关闭导航抽屉</string>
     <string name="nav_header_desc">导航头</string>
     <string name="action_about">关于</string>
+    <string name="clear_craft">清除已加载的存档</string>
+
     <!--GUI文本-->
     <!--载入存档-->
     <string name="menu_home">载入Craft</string>
@@ -58,6 +60,7 @@
     <string name="second">秒</string>
     <string name="loading_file">正在加载Craft文件</string>
     <string name="output_file">正在导出Craft文件</string>
+    <string name="clear_text">已清除所有修改</string>
 
     <!--警告弹窗内容-->
     <string name="warning">警告</string>
@@ -70,6 +73,8 @@
     <string name="load_craft_file_2">1.先将存档文件复制到：内部存储/Android/data/com.infinity.sr2.toolkit/files/ 后操作</string>
     <string name="load_craft_file_3">2.在输入框内填入你存档的名称，不要加.xml后缀</string>
     <string name="load_craft_file_4">如果报错则说明文件名填写有误</string>
+    <string name="load_craft_file_5">当修改的内容较多时，可统一修改后再点击导出</string>
+    <string name="load_craft_file_6">点击右上角的清除按钮可以清除所有的修改</string>
     <!--存档缩放的文本内容-->
     <string name="craft_resize_1">存档整体缩放使用说明</string>
     <string name="craft_resize_2">第一个输入框是体积缩放,用于整体放大和缩小存档</string>
