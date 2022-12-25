@@ -467,6 +467,14 @@ public class MainActivity extends AppCompatActivity {
                         " "
                         + "\r\n" +
                         getResources().getString(R.string.load_craft_file_4)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.load_craft_file_5)
+                        + "\r\n" +
+                        " "
+                        + "\r\n" +
+                        getResources().getString(R.string.load_craft_file_6)
                 ).create();
         dialog.show();
     }
