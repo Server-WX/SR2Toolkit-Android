@@ -683,7 +683,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 跳转APP官网
     public void linkAppWebSite(View view) {
-        linkWebSite("https://www.simplerockets.com/u/JasonCaesar007");
+        linkWebSite("https://www.simplerockets.com/Mods/View/214587/SimpleRockets2-Toolkit-Android");
     }
 
     // 跳转官方QQ群
