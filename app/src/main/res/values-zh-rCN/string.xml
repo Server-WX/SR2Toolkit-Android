@@ -52,6 +52,7 @@
     <string name="inertia_tensor_label">惯性张量：</string>
     <string name="fuel_line_label">零件燃料管道：</string>
     <!--弹出消息-->
+    <string name="applied">已应用</string>
     <string name="rw_permissions_true">权限获取成功</string>
     <string name="rw_permissions_false">请授权应用使用内部存储</string>
     <string name="file_exists_true">加载成功，点击菜单栏开始使用吧！</string>

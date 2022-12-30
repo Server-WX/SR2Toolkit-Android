@@ -112,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
 
         Button outPutButton = findViewById(R.id.output_button);
+        if (outPutButton.getVisibility() == View.VISIBLE) {
+            Log.d("button", "true");
+        }
 
         outPutButton.setOnClickListener(click -> {
 
@@ -137,10 +140,13 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
+
     public void inputFileButton(View view) {
         // 导入存档文件
         File packagePath = getExternalFilesDir("");
         EditText fileName = findViewById(R.id.file_input);
+        Button outputButton = findViewById(R.id.output_button);
+        outputButton.setVisibility(View.INVISIBLE);
 
         String filePath = packagePath + "/" + fileName.getText();
         Log.d("pkgPath", filePath);
@@ -201,6 +207,11 @@ public class MainActivity extends AppCompatActivity {
             } else if (mass.contains(" ")) {
                 alertSpaceWarning();
             }
+
+            if (!resize.equals("") && !resize.contains(" ") || !mass.equals("") && !mass.contains(" ")) {
+                appliedText();
+            }
+
             // 还原默认零件质量
             if (mass.equals("default")) {
                 editXmlUtil.removeAttribute("massScale");
@@ -281,6 +292,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             outputButton.setVisibility(View.VISIBLE);
+            appliedText();
         } else {
             alertNotFileWarning();
         }
@@ -313,6 +325,7 @@ public class MainActivity extends AppCompatActivity {
             editXmlUtil.editAttribute("includeInDrag", String.valueOf(dragToggle.isChecked()));
 
             outputButton.setVisibility(View.VISIBLE);
+            appliedText();
         } else {
             alertNotFileWarning();
         }
@@ -320,7 +333,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //存档抗性监听
+    //存档抗性设置监听
     public void resistanceApply(View view) {
 
         if (editXmlUtil.getFileStatus() != null) {
@@ -333,6 +346,7 @@ public class MainActivity extends AppCompatActivity {
             // 文本框逻辑处理
             if (!damageValue.equals("") && !damageValue.contains(" ")) {
                 editXmlUtil.editAttribute("maxDamage", damageValue);
+                outputButton.setVisibility(View.VISIBLE);
             } else if (damageValue.contains(" ")) {
                 alertSpaceWarning();
             }
@@ -340,22 +354,34 @@ public class MainActivity extends AppCompatActivity {
             if (!heatResistValue.equals("") && !heatResistValue.contains(" ")) {
                 editXmlUtil.editAttribute("heatShield", heatResistValue);
                 editXmlUtil.removeAttribute("heatShieldScale");
+                outputButton.setVisibility(View.VISIBLE);
             } else if (heatResistValue.contains(" ")) {
                 alertSpaceWarning();
             }
             // 还原默认值
             if (damageValue.equals("default")) {
                 editXmlUtil.removeAttribute("maxDamage");
+                outputButton.setVisibility(View.VISIBLE);
             }
             if (heatResistValue.equals("default")) {
                 editXmlUtil.removeAttribute("heatShield");
+                outputButton.setVisibility(View.VISIBLE);
             }
 
             if (damageValue.equals("") && heatResistValue.equals("")) {
                 alertDoubleNullWarning();
             }
 
-            outputButton.setVisibility(View.VISIBLE);
+            if ((!damageValue.equals("") && !damageValue.contains(" ")) || (!heatResistValue.equals("") && !heatResistValue.contains(" "))
+                    ||
+                    damageValue.equals("default") || heatResistValue.equals("default")
+            ) {
+                appliedText();
+            }
+
+            if (outputButton.getVisibility() == View.VISIBLE) {
+                appliedText();
+            }
         } else {
             alertNotFileWarning();
         }
@@ -384,6 +410,7 @@ public class MainActivity extends AppCompatActivity {
             editXmlUtil.clearFuelTankTexture(fuelTanksTexture.isChecked());
 
             outputButton.setVisibility(View.VISIBLE);
+            appliedText();
         } else {
             alertNotFileWarning();
         }
@@ -407,27 +434,41 @@ public class MainActivity extends AppCompatActivity {
             // 其他设置逻辑层
             if (!colorBlockValue.equals("") && !colorBlockValue.contains(" ")) {
                 editXmlUtil.addColorBlock(colorBlockValue);
+                outputButton.setVisibility(View.VISIBLE);
             } else if (colorBlockValue.contains(" ")) {
                 alertSpaceWarning();
             }
             if (!inertiaTensorValue.equals("") && !inertiaTensorValue.contains(" ")) {
                 editXmlUtil.editAttribute("inertiaTensorUserScale", inertiaTensorValue);
+                outputButton.setVisibility(View.VISIBLE);
             } else if (inertiaTensorValue.contains(" ")) {
                 alertSpaceWarning();
             }
 
-            if (colorBlockValue.equals("") && inertiaTensorValue.equals("")) {
+            /*if (colorBlockValue.equals("") && inertiaTensorValue.equals("")) {
                 alertDoubleNullWarning();
-            }
+            }*/
 
             // 燃料管道开关
             if (fuelLineToggle.isChecked()) {
                 editXmlUtil.editAttribute("fuelLine", String.valueOf(fuelLineToggle.isChecked()));
+                outputButton.setVisibility(View.VISIBLE);
             } else {
                 editXmlUtil.removeAttribute("fuelLine");
+                outputButton.setVisibility(View.VISIBLE);
             }
 
-            outputButton.setVisibility(View.VISIBLE);
+            if (
+                    !colorBlockValue.equals("") && !colorBlockValue.contains(" ")
+                            ||
+                            !inertiaTensorValue.equals("") && !inertiaTensorValue.contains(" ")
+                            ||
+                            fuelLineToggle.isChecked()
+                            ||
+                            !fuelLineToggle.isChecked()
+            ) {
+                appliedText();
+            }
         } else {
             alertNotFileWarning();
         }
@@ -449,6 +490,7 @@ public class MainActivity extends AppCompatActivity {
             editXmlUtil.editAttribute("collisionPreventExternalDisconnections", "true");
 
             outputButton.setVisibility(View.VISIBLE);
+            appliedText();
         } else {
             alertNotFileWarning();
         }
@@ -669,6 +711,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //修改成功弹窗
+    public void appliedText() {
+        Toast.makeText(this, R.string.applied, Toast.LENGTH_SHORT).show();
+    }
+
     // 跳转网页
     public void linkWebSite(String webLink) {
         Intent intent = new Intent();
@@ -680,7 +727,7 @@ public class MainActivity extends AppCompatActivity {
 
     // 跳转最新版本
     public void linkLTSVersion(View view) {
-        linkWebSite("");
+        linkWebSite("https://github.com/Server-WX/SR2-Toolkit-for-Android/releases");
     }
 
     // 跳转作者官网
@@ -760,8 +807,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if (item.getItemId() == R.id.clear_craft){
+        Button outPutButton = findViewById(R.id.output_button);
+        if (item.getItemId() == R.id.clear_craft) {
             if (editXmlUtil.setReplaceCraft()) {
+                outPutButton.setVisibility(View.INVISIBLE);
                 Snackbar.make(findViewById(R.id.fragment_view), R.string.clear_text, 5000).show();
             }
         }

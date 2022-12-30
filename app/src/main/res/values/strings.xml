@@ -52,6 +52,7 @@
     <string name="inertia_tensor_label">Inertial Tensor User Scale：</string>
     <string name="fuel_line_label">All-around Fuel Lines：</string>
     <!--弹出消息-->
+    <string name="applied">It has been modified</string>
     <string name="rw_permissions_true">Access Succeeded</string>
     <string name="rw_permissions_false">Please authorize the application to use internal storage</string>
     <string name="file_exists_true">Loading succeeded. Click the menu bar to start using!</string>
