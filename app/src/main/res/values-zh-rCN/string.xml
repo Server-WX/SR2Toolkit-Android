@@ -142,6 +142,8 @@
     <string name="tg_code">SimpleRockets2 Toolkit</string>
     <string name="sr2_website">SR2 官网：</string>
     <string name="sr2_website_link">JasonCaesar007</string>
+    <string name="sponsor_website">赞助渠道：</string>
+    <string name="sponsor_website_link">爱发电</string>
     <string name="source_license">开源许可</string>
     <string name="dom4j">Dom4j</string>
     <string name="dom4j_source_license_1">Copyright 2001–2016 © MetaStuff</string>

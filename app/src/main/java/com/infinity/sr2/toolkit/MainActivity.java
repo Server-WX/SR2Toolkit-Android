@@ -696,9 +696,14 @@ public class MainActivity extends AppCompatActivity {
         linkWebSite("https://t.me/+KfJBBjHhgZwzNzk1");
     }
 
-    // 跳转Tg群组
+    // 跳转Dom4j官网
     public void linkDom4jWebsite(View view) {
         linkWebSite("https://dom4j.github.io/");
+    }
+
+    // 跳转爱发电
+    public void linkSponsorshipWebsite(View view) {
+        linkWebSite("https://afdian.net/a/sr2toolkit-jc");
     }
 
     // Dom4j开源许可证
