@@ -3,7 +3,7 @@
     <string name="app_name">SR2 Toolkit</string>
     <string name="nav_header_title">JasonCaesar007</string>
     <string name="nav_header_subtitle">InfinityIndustry Studio</string>
-    <string name="app_version">Version：0.5.5</string>
+    <string name="app_version">版本号：1.0 稳定版</string>
 
     <string name="navigation_drawer_open">打开导航抽屉</string>
     <string name="navigation_drawer_close">关闭导航抽屉</string>
@@ -131,6 +131,9 @@
     <string name="god_mode_7">4. collisionPreventExternalDisconnections -> 无论如何碰撞连接点都不会断开</string>
 
     <!--关于-->
+    <string name="dialog_version_title">APP 版本</string>
+    <string name="dialog_version_text1">当前版本：</string>
+    <string name="dialog_version_text2">点击<a href="http://www.baidu.com">此处</a>查看最新版本</string>
     <string name="statement">声明</string>
     <string name="statement_1">本程序承诺永久免费，不得篡改进行转卖!</string>
     <string name="statement_2">如果您以付费的方式获得此程序我们概不负责</string>
@@ -142,6 +145,8 @@
     <string name="tg_code">SimpleRockets2 Toolkit</string>
     <string name="sr2_website">SR2 官网：</string>
     <string name="sr2_website_link">JasonCaesar007</string>
+    <string name="srt_website">APP官网</string>
+    <string name="srt_website_link">简火2工具箱</string>
     <string name="sponsor_website">赞助渠道：</string>
     <string name="sponsor_website_link">爱发电</string>
     <string name="source_license">开源许可</string>

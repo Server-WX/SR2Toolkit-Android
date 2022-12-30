@@ -3,7 +3,7 @@
     <string name="app_name">SR2 Toolkit</string>
     <string name="nav_header_title">JasonCaesar007</string>
     <string name="nav_header_subtitle">InfinityIndustry Studio</string>
-    <string name="app_version">Version：0.5.5</string>
+    <string name="app_version">Version：1.0 LTS</string>
 
     <string name="navigation_drawer_open">Menu</string>
     <string name="navigation_drawer_close">Exit</string>
@@ -132,6 +132,9 @@
     <string name="god_mode_7">- collisionPreventExternalDisconnections -> The connection will not broken from however you hit</string>
 
     <!--关于-->
+    <string name="dialog_version_title">APP 版本</string>
+    <string name="dialog_version_text1">当前版本：</string>
+    <string name="dialog_version_text2">点击<a href="http://www.baidu.com">此处</a>查看最新版本</string>
     <string name="statement">Declaration</string>
     <string name="statement_1">This program promises to be free but without be tampered for resale!</string>
     <string name="statement_2">We are not responsible if you obtain this program by paying</string>
@@ -143,6 +146,8 @@
     <string name="tg_code">SimpleRockets2 Toolkit</string>
     <string name="sr2_website">SR2 Website：</string>
     <string name="sr2_website_link">JasonCaesar007</string>
+    <string name="srt_website">APP Website：</string>
+    <string name="srt_website_link">SR2 Toolkit</string>
     <string name="sponsor_website">Sponsorship：</string>
     <string name="sponsor_website_link">Afdian</string>
     <string name="source_license">Open Source License</string>

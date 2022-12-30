@@ -10,6 +10,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MenuItem;
@@ -20,6 +21,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -674,6 +676,11 @@ public class MainActivity extends AppCompatActivity {
         Uri content_url = Uri.parse(webLink);
         intent.setData(content_url);
         startActivity(intent);
+    }
+
+    // 跳转最新版本
+    public void linkLTSVersion(View view) {
+        linkWebSite("");
     }
 
     // 跳转作者官网
