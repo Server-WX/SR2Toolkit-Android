@@ -6,56 +6,43 @@
 
     <RelativeLayout
         android:id="@+id/resize_input"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
         tools:ignore="UselessLeaf">
 
-        <LinearLayout
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/craft_resize_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:ignore="RtlSymmetry">
+            android:text="@string/craft_resize_label"
+            android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/craft_resize_label"
-                style="@style/text_style"
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/craft_resize_label"
-                android:textColor="@color/white" />
-
-            <EditText
-                android:id="@+id/resize_number"
-                android:layout_width="150dp"
-                android:layout_weight="3"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-
+        <EditText
+            android:id="@+id/resize_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/craft_resize_label"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:paddingStart="45dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/mass_plant"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        tools:ignore="RtlSymmetry">
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/toWidth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="20dp"
             android:checked="true"
             android:text="@string/to_scale"
             android:textColor="@color/white"
@@ -73,37 +60,25 @@
 
     <RelativeLayout
         android:id="@+id/mass_plant"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="25dp">
 
-        <LinearLayout
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/mass_label"
+            style="@style/text_style"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:ignore="RtlSymmetry">
+            android:text="@string/mass_scale" />
 
-            <TextView
-                android:id="@+id/mass_label"
-                style="@style/text_style"
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mass_scale" />
-
-            <EditText
-                android:id="@+id/mass_number"
-                android:layout_width="150dp"
-                android:layout_weight="3"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white" />
-
-        </LinearLayout>
-
-
+        <EditText
+            android:id="@+id/mass_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mass_label"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 
